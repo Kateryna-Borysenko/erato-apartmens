@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="countries"></div>
+    <script>
+        const text = `<ul><li><a href="/wiki/%CE%91%CE%B2%CE%B7%CF%83%CF%83%CF%85%CE%BD%CE%AF%CE%B1" title="Αβησσυνία">Αβησσυνία</a></li>
+<li><a href="/wiki/%CE%91%CE%B3%CE%B3%CE%BB%CE%AF%CE%B1" title="Αγγλία">Αγγλία</a></li>
+<li><a href="/wiki/%CE%86%CE%B3%CE%B9%CE%BF%CF%82_%CE%92%CE%B9%CE%BA%CE%AD%CE%BD%CF%84%CE%B9%CE%BF%CF%82_%CE%BA%CE%B1%CE%B9_%CE%93%CF%81%CE%B5%CE%BD%CE%B1%CE%B4%CE%AF%CE%BD%CE%B5%CF%82" title="Άγιος Βικέντιος και Γρεναδίνες">Άγιος Βικέντιος και Γρεναδίνες</a></li>
+<li><a href="/wiki/%CE%86%CE%B3%CE%B9%CE%BF%CF%82_%CE%A7%CF%81%CE%B9%CF%83%CF%84%CF%8C%CF%86%CE%BF%CF%81%CE%BF%CF%82_%CE%BA%CE%B1%CE%B9_%CE%9D%CE%AD%CE%B2%CE%B9%CF%82" title="Άγιος Χριστόφορος και Νέβις">Άγιος Χριστόφορος και Νέβις</a></li>
+<li><a href="/wiki/%CE%91%CE%B3%CE%BA%CF%8C%CE%BB%CE%B1" title="Αγκόλα">Αγκόλα</a></li>
+<li><a href="/wiki/%CE%91%CE%B6%CE%B5%CF%81%CE%BC%CF%80%CE%B1%CF%8A%CF%84%CE%B6%CE%AC%CE%BD" title="Αζερμπαϊτζάν">Αζερμπαϊτζάν</a></li>
+<li><a href="/wiki/%CE%91%CE%AF%CE%B3%CF%85%CF%80%CF%84%CE%BF%CF%82" title="Αίγυπτος">Αίγυπτος</a></li>
+<li><a href="/wiki/%CE%91%CE%B9%CE%B8%CE%B9%CE%BF%CF%80%CE%AF%CE%B1" title="Αιθιοπία">Αιθιοπία</a></li>
+<li><a href="/wiki/%CE%91%CE%BA%CF%84%CE%AE_%CE%95%CE%BB%CE%B5%CF%86%CE%B1%CE%BD%CF%84%CE%BF%CF%83%CF%84%CE%BF%CF%8D" title="Ακτή Ελεφαντοστού">Ακτή Ελεφαντοστού</a></li>
+<li><a href="/wiki/%CE%91%CE%BB%CE%B2%CE%B1%CE%BD%CE%AF%CE%B1" title="Αλβανία">Αλβανία</a></li>
+<li><a href="/wiki/%CE%91%CE%BB%CE%B3%CE%B5%CF%81%CE%AF%CE%B1" title="Αλγερία">Αλγερία</a></li>
+<li><a href="/wiki/%CE%91%CE%BD%CE%B1%CF%84%CE%BF%CE%BB%CE%B9%CE%BA%CF%8C_%CE%A4%CE%B9%CE%BC%CF%8C%CF%81" title="Ανατολικό Τιμόρ">Ανατολικό Τιμόρ</a></li>
+<li><a href="/wiki/%CE%91%CE%BD%CE%B4%CF%8C%CF%81%CE%B1" title="Ανδόρα">Ανδόρα</a></li>
+<li><a href="/wiki/%CE%91%CE%BF%CF%8D%CF%83%CF%84%CF%81%CE%B9%CE%B1" title="Αούστρια">Αούστρια</a></li>
+<li><a href="/wiki/%CE%91%CF%81%CE%B3%CE%B5%CE%BD%CF%84%CE%B9%CE%BD%CE%AE" title="Αργεντινή">Αργεντινή</a></li>
+<li><a href="/wiki/%CE%91%CF%81%CE%BC%CE%B5%CE%BD%CE%AF%CE%B1" title="Αρμενία">Αρμενία</a></li>
+<li><a href="/wiki/%CE%91%CF%85%CF%83%CF%84%CF%81%CE%B1%CE%BB%CE%AF%CE%B1" title="Αυστραλία">Αυστραλία</a></li>
+<li><a href="/wiki/%CE%91%CF%85%CF%83%CF%84%CF%81%CE%AF%CE%B1" title="Αυστρία">Αυστρία</a></li>
+<li><a href="/wiki/%CE%91%CF%86%CE%B3%CE%B1%CE%BD%CE%B9%CF%83%CF%84%CE%AC%CE%BD" title="Αφγανιστάν">Αφγανιστάν</a></li></ul></div><div class="mw-category-group"><h3>Β</h3>
+<ul><li><a href="/wiki/%CE%92%CE%B1%CE%BD%CE%BF%CF%85%CE%AC%CF%84%CE%BF%CF%85" title="Βανουάτου">Βανουάτου</a></li>
+<li><a href="/wiki/%CE%92%CE%AD%CE%BB%CE%B3%CE%B9%CE%BF" title="Βέλγιο">Βέλγιο</a></li>
+<li><a href="/wiki/%CE%92%CE%B5%CE%BD%CE%B5%CE%B6%CE%BF%CF%85%CE%AD%CE%BB%CE%B1" title="Βενεζουέλα">Βενεζουέλα</a></li>
+<li><a href="/wiki/%CE%92%CE%B9%CE%B5%CF%84%CE%BD%CE%AC%CE%BC" title="Βιετνάμ">Βιετνάμ</a></li>
+<li><a href="/wiki/%CE%92%CE%B9%CF%81%CE%BC%CE%B1%CE%BD%CE%AF%CE%B1" title="Βιρμανία">Βιρμανία</a></li>
+<li><a href="/wiki/%CE%92%CE%BF%CE%BB%CE%B9%CE%B2%CE%AF%CE%B1" title="Βολιβία">Βολιβία</a></li>
+<li><a href="/wiki/%CE%92%CF%8C%CF%81%CE%B5%CE%B9%CE%B1_%CE%9A%CE%BF%CF%81%CE%AD%CE%B1" title="Βόρεια Κορέα">Βόρεια Κορέα</a></li>
+<li><a href="/wiki/%CE%92%CE%BF%CF%83%CE%BD%CE%AF%CE%B1" title="Βοσνία">Βοσνία</a></li>
+<li><a href="/wiki/%CE%92%CE%BF%CF%83%CE%BD%CE%AF%CE%B1_%CE%95%CF%81%CE%B6%CE%B5%CE%B3%CE%BF%CE%B2%CE%AF%CE%BD%CE%B7" title="Βοσνία Ερζεγοβίνη">Βοσνία Ερζεγοβίνη</a></li>
+<li><a href="/wiki/%CE%92%CE%BF%CF%83%CE%BD%CE%AF%CE%B1_%CE%BA%CE%B1%CE%B9_%CE%95%CF%81%CE%B6%CE%B5%CE%B3%CE%BF%CE%B2%CE%AF%CE%BD%CE%B7" title="Βοσνία και Ερζεγοβίνη">Βοσνία και Ερζεγοβίνη</a></li>
+<li><a href="/wiki/%CE%92%CE%BF%CF%85%CE%BB%CE%B3%CE%B1%CF%81%CE%AF%CE%B1" title="Βουλγαρία">Βουλγαρία</a></li>
+<li><a href="/wiki/%CE%92%CF%81%CE%B1%CE%B6%CE%B9%CE%BB%CE%AF%CE%B1" title="Βραζιλία">Βραζιλία</a></li></ul></div><div class="mw-category-group"><h3>Γ</h3>
+<ul><li><a href="/wiki/%CE%93%CE%B1%CE%BB%CE%BB%CE%AF%CE%B1" title="Γαλλία">Γαλλία</a></li>
+<li><a href="/wiki/%CE%93%CE%B5%CF%81%CE%BC%CE%B1%CE%BD%CE%AF%CE%B1" title="Γερμανία">Γερμανία</a></li>
+<li><a href="/wiki/%CE%93%CE%BA%CE%AC%CE%BC%CF%80%CE%B9%CE%B1" title="Γκάμπια">Γκάμπια</a></li>
+<li><a href="/wiki/%CE%93%CE%BA%CE%B1%CE%BC%CF%80%CF%8C%CE%BD" title="Γκαμπόν">Γκαμπόν</a></li>
+<li><a href="/wiki/%CE%93%CE%BF%CF%85%CE%B1%CF%84%CE%B5%CE%BC%CE%AC%CE%BB%CE%B1" title="Γουατεμάλα">Γουατεμάλα</a></li>
+<li><a href="/wiki/%CE%93%CE%BF%CF%85%CE%B9%CE%AC%CE%BD%CE%B1" title="Γουιάνα">Γουιάνα</a></li>
+<li><a href="/wiki/%CE%93%CE%BF%CF%85%CE%B9%CE%BD%CE%AD%CE%B1_%CE%9C%CF%80%CE%B9%CF%83%CF%83%CE%AC%CE%BF%CF%85" title="Γουινέα Μπισσάου">Γουινέα Μπισσάου</a></li>
+<li><a href="/wiki/%CE%93%CF%81%CE%B5%CE%BD%CE%AC%CE%B4%CE%B1" title="Γρενάδα">Γρενάδα</a></li>
+<li><a href="/wiki/%CE%93%CF%81%CE%BF%CE%B9%CE%BB%CE%B1%CE%BD%CE%B4%CE%AF%CE%B1" title="Γροιλανδία">Γροιλανδία</a></li></ul></div><div class="mw-category-group"><h3>Δ</h3>
+<ul><li><a href="/wiki/%CE%94%CE%B1%CE%BD%CE%AF%CE%B1" title="Δανία">Δανία</a></li>
+<li><a href="/wiki/%CE%94%CE%BF%CE%BC%CE%B9%CE%BD%CE%AF%CE%BA%CE%B1" title="Δομινίκα">Δομινίκα</a></li>
+<li><a href="/wiki/%CE%94%CE%BF%CE%BC%CE%B9%CE%BD%CE%B9%CE%BA%CE%B1%CE%BD%CE%AE_%CE%94%CE%B7%CE%BC%CE%BF%CE%BA%CF%81%CE%B1%CF%84%CE%AF%CE%B1" title="Δομινικανή Δημοκρατία">Δομινικανή Δημοκρατία</a></li></ul></div><div class="mw-category-group"><h3>Ε</h3>
+<ul><li><a href="/wiki/%CE%95%CE%BB%CE%B2%CE%B5%CF%84%CE%AF%CE%B1" title="Ελβετία">Ελβετία</a></li>
+<li><a href="/wiki/%CE%95%CE%BB%CE%BB%CE%AC%CE%B4%CE%B1" title="Ελλάδα">Ελλάδα</a></li>
+<li><a href="/wiki/%CE%95%CE%BB_%CE%A3%CE%B1%CE%BB%CE%B2%CE%B1%CE%B4%CF%8C%CF%81" title="Ελ Σαλβαδόρ">Ελ Σαλβαδόρ</a></li>
+<li><a href="/wiki/%CE%95%CF%81%CF%85%CE%B8%CF%81%CE%B1%CE%AF%CE%B1" title="Ερυθραία">Ερυθραία</a></li>
+<li><a href="/wiki/%CE%95%CF%83%CE%B8%CE%BF%CE%BD%CE%AF%CE%B1" title="Εσθονία">Εσθονία</a></li></ul></div><div class="mw-category-group"><h3>Η</h3>
+<ul><li><a href="/wiki/%CE%97%CE%BD%CF%89%CE%BC%CE%AD%CE%BD%CE%B1_%CE%91%CF%81%CE%B1%CE%B2%CE%B9%CE%BA%CE%AC_%CE%95%CE%BC%CE%B9%CF%81%CE%AC%CF%84%CE%B1" title="Ηνωμένα Αραβικά Εμιράτα">Ηνωμένα Αραβικά Εμιράτα</a></li>
+<li><a href="/wiki/%CE%97%CE%BD%CF%89%CE%BC%CE%AD%CE%BD%CE%B5%CF%82_%CE%A0%CE%BF%CE%BB%CE%B9%CF%84%CE%B5%CE%AF%CE%B5%CF%82_%CF%84%CE%B7%CF%82_%CE%91%CE%BC%CE%B5%CF%81%CE%B9%CE%BA%CE%AE%CF%82" title="Ηνωμένες Πολιτείες της Αμερικής">Ηνωμένες Πολιτείες της Αμερικής</a></li>
+<li><a href="/wiki/%CE%97%CE%BD%CF%89%CE%BC%CE%AD%CE%BD%CE%BF_%CE%92%CE%B1%CF%83%CE%AF%CE%BB%CE%B5%CE%B9%CE%BF" title="Ηνωμένο Βασίλειο">Ηνωμένο Βασίλειο</a></li>
+<li><a href="/wiki/%CE%97%CE%BD%CF%89%CE%BC%CE%AD%CE%BD%CE%BF_%CE%92%CE%B1%CF%83%CE%AF%CE%BB%CE%B5%CE%B9%CE%BF_%CF%84%CE%B7%CF%82_%CE%9C%CE%B5%CE%B3%CE%AC%CE%BB%CE%B7%CF%82_%CE%92%CF%81%CE%B5%CF%84%CE%B1%CE%BD%CE%AF%CE%B1%CF%82_%CE%BA%CE%B1%CE%B9_%CF%84%CE%B7%CF%82_%CE%92%CE%BF%CF%81%CE%B5%CE%AF%CE%BF%CF%85_%CE%99%CF%81%CE%BB%CE%B1%CE%BD%CE%B4%CE%AF%CE%B1%CF%82" title="Ηνωμένο Βασίλειο της Μεγάλης Βρετανίας και της Βορείου Ιρλανδίας">Ηνωμένο Βασίλειο της Μεγάλης Βρετανίας και της Βορείου Ιρλανδίας</a></li>
+<li><a href="/wiki/%CE%97%CE%A0%CE%91" title="ΗΠΑ">ΗΠΑ</a></li></ul></div><div class="mw-category-group"><h3>Ι</h3>
+<ul><li><a href="/wiki/%CE%99%CE%B1%CF%80%CF%89%CE%BD%CE%AF%CE%B1" title="Ιαπωνία">Ιαπωνία</a></li>
+<li><a href="/wiki/%CE%99%CE%BD%CE%B4%CE%AF%CE%B1" title="Ινδία">Ινδία</a></li>
+<li><a href="/wiki/%CE%99%CE%BD%CE%B4%CE%BF%CE%BD%CE%B7%CF%83%CE%AF%CE%B1" title="Ινδονησία">Ινδονησία</a></li>
+<li><a href="/wiki/%CE%99%CE%BF%CF%81%CE%B4%CE%B1%CE%BD%CE%AF%CE%B1" title="Ιορδανία">Ιορδανία</a></li>
+<li><a href="/wiki/%CE%99%CF%81%CE%AC%CE%BA" title="Ιράκ">Ιράκ</a></li>
+<li><a href="/wiki/%CE%99%CF%81%CE%AC%CE%BD" title="Ιράν">Ιράν</a></li>
+<li><a href="/wiki/%CE%99%CF%81%CE%BB%CE%B1%CE%BD%CE%B4%CE%AF%CE%B1" title="Ιρλανδία">Ιρλανδία</a></li>
+<li><a href="/wiki/%CE%99%CF%83%CE%B7%CE%BC%CE%B5%CF%81%CE%B9%CE%BD%CF%8C%CF%82" title="Ισημερινός">Ισημερινός</a></li>
+<li><a href="/wiki/%CE%99%CF%83%CE%BB%CE%B1%CE%BD%CE%B4%CE%AF%CE%B1" title="Ισλανδία">Ισλανδία</a></li>
+<li><a href="/wiki/%CE%99%CF%83%CF%80%CE%B1%CE%BD%CE%AF%CE%B1" title="Ισπανία">Ισπανία</a></li>
+<li><a href="/wiki/%CE%99%CF%83%CF%81%CE%B1%CE%AE%CE%BB" title="Ισραήλ">Ισραήλ</a></li>
+<li><a href="/wiki/%CE%99%CF%84%CE%B1%CE%BB%CE%AF%CE%B1" title="Ιταλία">Ιταλία</a></li></ul></div><div class="mw-category-group"><h3>Κ</h3>
+<ul><li><a href="/wiki/%CE%9A%CE%B1%CE%B6%CE%B1%CE%BA%CF%83%CF%84%CE%AC%CE%BD" title="Καζακστάν">Καζακστάν</a></li>
+<li><a href="/wiki/%CE%9A%CE%B1%CE%BC%CF%80%CF%8C%CF%84%CE%B6%CE%B7" title="Καμπότζη">Καμπότζη</a></li>
+<li><a href="/wiki/%CE%9A%CE%B1%CE%BD%CE%B1%CE%B4%CE%AC%CF%82" title="Καναδάς">Καναδάς</a></li>
+<li><a href="/wiki/%CE%9A%CE%B1%CF%84%CE%AC%CF%81" title="Κατάρ">Κατάρ</a></li>
+<li><a href="/wiki/%CE%9A%CE%AC%CF%84%CF%89_%CE%A7%CF%8E%CF%81%CE%B5%CF%82" title="Κάτω Χώρες">Κάτω Χώρες</a></li>
+<li><a href="/wiki/%CE%9A%CE%AD%CE%BD%CF%85%CE%B1" title="Κένυα">Κένυα</a></li>
+<li><a href="/wiki/%CE%9A%CE%AF%CE%BD%CE%B1" title="Κίνα">Κίνα</a></li>
+<li><a href="/wiki/%CE%9A%CE%B9%CF%81%CE%B3%CE%B9%CE%B6%CE%AF%CE%B1" title="Κιργιζία">Κιργιζία</a></li>
+<li><a href="/wiki/%CE%9A%CE%B9%CF%81%CE%B9%CE%BC%CF%80%CE%AC%CF%84%CE%B9" title="Κιριμπάτι">Κιριμπάτι</a></li>
+<li><a href="/wiki/%CE%9A%CE%BF%CE%BB%CE%BF%CE%BC%CE%B2%CE%AF%CE%B1" title="Κολομβία">Κολομβία</a></li>
+<li><a href="/wiki/%CE%9A%CE%BF%CE%BC%CF%8C%CF%81%CE%B5%CF%82" title="Κομόρες">Κομόρες</a></li>
+<li><a href="/wiki/%CE%9A%CE%BF%CF%81%CE%AD%CE%B1" title="Κορέα">Κορέα</a></li>
+<li><a href="/wiki/%CE%9A%CF%8C%CF%83%CF%84%CE%B1_%CE%A1%CE%AF%CE%BA%CE%B1" title="Κόστα Ρίκα">Κόστα Ρίκα</a></li>
+<li><a href="/wiki/%CE%9A%CE%BF%CF%8D%CE%B2%CE%B1" title="Κούβα">Κούβα</a></li>
+<li><a href="/wiki/%CE%9A%CE%BF%CF%85%CE%B2%CE%AD%CE%B9%CF%84" title="Κουβέιτ">Κουβέιτ</a></li>
+<li><a href="/wiki/%CE%9A%CF%81%CE%AC%CF%84%CE%BF%CF%82_%CF%84%CE%B7%CF%82_%CE%A0%CE%B1%CE%BB%CE%B1%CE%B9%CF%83%CF%84%CE%AF%CE%BD%CE%B7%CF%82" title="Κράτος της Παλαιστίνης">Κράτος της Παλαιστίνης</a></li>
+<li><a href="/wiki/%CE%9A%CF%81%CE%BF%CE%B1%CF%84%CE%AF%CE%B1" title="Κροατία">Κροατία</a></li>
+<li><a href="/wiki/%CE%9A%CF%8D%CF%80%CF%81%CE%BF%CF%82" title="Κύπρος">Κύπρος</a></li></ul></div><div class="mw-category-group"><h3>Λ</h3>
+<ul><li><a href="/wiki/%CE%9B%CE%B1%CF%8A%CE%BA%CE%AE_%CE%94%CE%B7%CE%BC%CE%BF%CE%BA%CF%81%CE%B1%CF%84%CE%AF%CE%B1_%CF%84%CE%BF%CF%85_%CE%A4%CE%B9%CE%BC%CF%8C%CF%81-%CE%9B%CE%AD%CF%83%CF%84%CE%B5" title="Λαϊκή Δημοκρατία του Τιμόρ-Λέστε">Λαϊκή Δημοκρατία του Τιμόρ-Λέστε</a></li>
+<li><a href="/wiki/%CE%9B%CE%AC%CE%BF%CF%82" title="Λάος">Λάος</a></li>
+<li><a href="/wiki/%CE%9B%CE%B5%CF%84%CE%BF%CE%BD%CE%AF%CE%B1" title="Λετονία">Λετονία</a></li>
+<li><a href="/wiki/%CE%9B%CE%B5%CF%85%CE%BA%CE%BF%CF%81%CF%89%CF%83%CE%AF%CE%B1" title="Λευκορωσία">Λευκορωσία</a></li>
+<li><a href="/wiki/%CE%9B%CE%B5%CF%87%CE%AF%CE%B1" title="Λεχία">Λεχία</a></li>
+<li><a href="/wiki/%CE%9B%CE%AF%CE%B2%CE%B1%CE%BD%CE%BF%CF%82" title="Λίβανος">Λίβανος</a></li>
+<li><a href="/wiki/%CE%9B%CE%B9%CE%B2%CE%B5%CF%81%CE%AF%CE%B1" title="Λιβερία">Λιβερία</a></li>
+<li><a href="/wiki/%CE%9B%CE%B9%CE%B8%CE%BF%CF%85%CE%B1%CE%BD%CE%AF%CE%B1" title="Λιθουανία">Λιθουανία</a></li>
+<li><a href="/wiki/%CE%9B%CE%BF%CF%85%CE%BE%CE%B5%CE%BC%CE%B2%CE%BF%CF%8D%CF%81%CE%B3%CE%BF" title="Λουξεμβούργο">Λουξεμβούργο</a></li></ul></div><div class="mw-category-group"><h3>Μ</h3>
+<ul><li><a href="/wiki/%CE%9C%CE%B1%CE%B4%CE%B1%CE%B3%CE%B1%CF%83%CE%BA%CE%AC%CF%81%CE%B7" title="Μαδαγασκάρη">Μαδαγασκάρη</a></li>
+<li><a href="/wiki/%CE%9C%CE%B1%CE%BB%CE%B1%CE%B9%CF%83%CE%AF%CE%B1" title="Μαλαισία">Μαλαισία</a></li>
+<li><a href="/wiki/%CE%9C%CE%B1%CE%BB%CE%AC%CE%BF%CF%85%CE%B9" title="Μαλάουι">Μαλάουι</a></li>
+<li><a href="/wiki/%CE%9C%CE%B1%CE%BB%CE%B4%CE%AF%CE%B2%CE%B5%CF%82" title="Μαλδίβες">Μαλδίβες</a></li>
+<li><a href="/wiki/%CE%9C%CE%AC%CE%BB%CE%B9" title="Μάλι">Μάλι</a></li>
+<li><a href="/wiki/%CE%9C%CE%AC%CE%BB%CF%84%CE%B1" title="Μάλτα">Μάλτα</a></li>
+<li><a href="/wiki/%CE%9C%CE%B1%CF%81%CF%8C%CE%BA%CE%BF" title="Μαρόκο">Μαρόκο</a></li>
+<li><a href="/wiki/%CE%9C%CE%B1%CF%85%CF%81%CE%B9%CF%84%CE%B1%CE%BD%CE%AF%CE%B1" title="Μαυριτανία">Μαυριτανία</a></li>
+<li><a href="/wiki/%CE%9C%CE%B1%CF%85%CF%81%CE%BF%CE%B2%CE%BF%CF%8D%CE%BD%CE%B9%CE%BF" title="Μαυροβούνιο">Μαυροβούνιο</a></li>
+<li><a href="/wiki/%CE%9C%CE%B5%CE%BE%CE%B9%CE%BA%CF%8C" title="Μεξικό">Μεξικό</a></li>
+<li><a href="/wiki/%CE%9C%CE%B9%CE%B1%CE%BD%CE%BC%CE%AC%CF%81" title="Μιανμάρ">Μιανμάρ</a></li>
+<li><a href="/wiki/%CE%9C%CE%B9%CE%BA%CF%81%CE%BF%CE%BD%CE%B7%CF%83%CE%AF%CE%B1" title="Μικρονησία">Μικρονησία</a></li>
+<li><a href="/wiki/%CE%9C%CE%BF%CE%B3%CE%B3%CE%BF%CE%BB%CE%AF%CE%B1" title="Μογγολία">Μογγολία</a></li>
+<li><a href="/wiki/%CE%9C%CE%BF%CE%B6%CE%B1%CE%BC%CE%B2%CE%AF%CE%BA%CE%B7" title="Μοζαμβίκη">Μοζαμβίκη</a></li>
+<li><a href="/wiki/%CE%9C%CE%BF%CE%BB%CE%B4%CE%B1%CE%B2%CE%AF%CE%B1" title="Μολδαβία">Μολδαβία</a></li>
+<li><a href="/wiki/%CE%9C%CF%80%CE%B1%CE%B3%CE%BA%CE%BB%CE%B1%CE%BD%CF%84%CE%AD%CF%82" title="Μπαγκλαντές">Μπαγκλαντές</a></li>
+<li><a href="/wiki/%CE%9C%CF%80%CE%B1%CF%81%CE%BC%CF%80%CE%AC%CE%BD%CF%84%CE%BF%CF%82" title="Μπαρμπάντος">Μπαρμπάντος</a></li>
+<li><a href="/wiki/%CE%9C%CF%80%CE%B1%CF%87%CE%AC%CE%BC%CE%B5%CF%82" title="Μπαχάμες">Μπαχάμες</a></li>
+<li><a href="/wiki/%CE%9C%CF%80%CE%B1%CF%87%CF%81%CE%AD%CE%B9%CE%BD" title="Μπαχρέιν">Μπαχρέιν</a></li>
+<li><a href="/wiki/%CE%9C%CF%80%CE%B5%CE%BB%CE%AF%CE%B6" title="Μπελίζ">Μπελίζ</a></li>
+<li><a href="/wiki/%CE%9C%CF%80%CE%B5%CE%BD%CE%AF%CE%BD" title="Μπενίν">Μπενίν</a></li>
+<li><a href="/wiki/%CE%9C%CF%80%CE%BF%CF%84%CF%83%CE%BF%CF%85%CE%AC%CE%BD%CE%B1" title="Μποτσουάνα">Μποτσουάνα</a></li>
+<li><a href="/wiki/%CE%9C%CF%80%CE%BF%CF%8D%CF%81%CE%BC%CE%B1" title="Μπούρμα">Μπούρμα</a></li>
+<li><a href="/wiki/%CE%9C%CF%80%CE%BF%CF%85%CF%84%CE%AC%CE%BD" title="Μπουτάν">Μπουτάν</a></li>
+<li><a href="/wiki/%CE%9C%CF%80%CF%81%CE%BF%CF%85%CE%BD%CE%AD%CE%B9" title="Μπρουνέι">Μπρουνέι</a></li></ul></div><div class="mw-category-group"><h3>Ν</h3>
+<ul><li><a href="/wiki/%CE%9D%CE%B1%CE%BC%CE%AF%CE%BC%CF%80%CE%B9%CE%B1" title="Ναμίμπια">Ναμίμπια</a></li>
+<li><a href="/wiki/%CE%9D%CE%B1%CE%BF%CF%8D%CF%81%CE%BF%CF%85" title="Ναούρου">Ναούρου</a></li>
+<li><a href="/wiki/%CE%9D%CE%AD%CE%B1_%CE%96%CE%B7%CE%BB%CE%B1%CE%BD%CE%B4%CE%AF%CE%B1" title="Νέα Ζηλανδία">Νέα Ζηλανδία</a></li>
+<li><a href="/wiki/%CE%9D%CE%B5%CF%80%CE%AC%CE%BB" title="Νεπάλ">Νεπάλ</a></li>
+<li><a href="/wiki/%CE%9D%CE%B7%CF%83%CE%B9%CE%AC_%CF%84%CE%BF%CF%85_%CE%A3%CE%BF%CE%BB%CE%BF%CE%BC%CF%8E%CE%BD%CF%84%CE%B1" title="Νησιά του Σολομώντα">Νησιά του Σολομώντα</a></li>
+<li><a href="/wiki/%CE%9D%CE%AE%CF%83%CE%BF%CE%B9_%CE%9C%CE%AC%CF%81%CF%83%CE%B1%CE%BB" title="Νήσοι Μάρσαλ">Νήσοι Μάρσαλ</a></li>
+<li><a href="/wiki/%CE%9D%CE%AE%CF%83%CE%BF%CE%B9_%CE%A3%CE%BF%CE%BB%CE%BF%CE%BC%CF%8E%CE%BD%CF%84%CE%B1" title="Νήσοι Σολομώντα">Νήσοι Σολομώντα</a></li>
+<li><a href="/wiki/%CE%9D%CE%AF%CE%B3%CE%B7%CF%81%CE%B1%CF%82" title="Νίγηρας">Νίγηρας</a></li>
+<li><a href="/wiki/%CE%9D%CE%B9%CE%B3%CE%B7%CF%81%CE%AF%CE%B1" title="Νιγηρία">Νιγηρία</a></li>
+<li><a href="/wiki/%CE%9D%CE%B9%CE%BA%CE%B1%CF%81%CE%AC%CE%B3%CE%BF%CF%85%CE%B1" title="Νικαράγουα">Νικαράγουα</a></li>
+<li><a href="/wiki/%CE%9D%CE%B9%CE%BF%CF%8D%CE%B5" title="Νιούε">Νιούε</a></li>
+<li><a href="/wiki/%CE%9D%CE%BF%CF%81%CE%B2%CE%B7%CE%B3%CE%AF%CE%B1" title="Νορβηγία">Νορβηγία</a></li>
+<li><a href="/wiki/%CE%9D%CF%8C%CF%84%CE%B9%CE%B1_%CE%91%CF%86%CF%81%CE%B9%CE%BA%CE%AE" title="Νότια Αφρική">Νότια Αφρική</a></li>
+<li><a href="/wiki/%CE%9D%CF%8C%CF%84%CE%B9%CE%B1_%CE%9A%CE%BF%CF%81%CE%AD%CE%B1" title="Νότια Κορέα">Νότια Κορέα</a></li>
+<li><a href="/wiki/%CE%9D%CF%84%CE%BF%CF%85%CE%BC%CF%80%CE%AC%CE%B9" title="Ντουμπάι">Ντουμπάι</a></li></ul></div><div class="mw-category-group"><h3>Ο</h3>
+<ul><li><a href="/wiki/%CE%9F%CE%BB%CE%BB%CE%B1%CE%BD%CE%B4%CE%AF%CE%B1" title="Ολλανδία">Ολλανδία</a></li>
+<li><a href="/wiki/%CE%9F%CE%BC%CE%AC%CE%BD" title="Ομάν">Ομάν</a></li>
+<li><a href="/wiki/%CE%9F%CE%BD%CE%B4%CE%BF%CF%8D%CF%81%CE%B1" title="Ονδούρα">Ονδούρα</a></li>
+<li><a href="/wiki/%CE%9F%CF%85%CE%B1%CE%BB%CE%AF%CE%B1" title="Ουαλία">Ουαλία</a></li>
+<li><a href="/wiki/%CE%9F%CF%85%CE%B3%CE%B3%CE%B1%CF%81%CE%AF%CE%B1" title="Ουγγαρία">Ουγγαρία</a></li>
+<li><a href="/wiki/%CE%9F%CF%85%CE%B6%CE%BC%CF%80%CE%B5%CE%BA%CE%B9%CF%83%CF%84%CE%AC%CE%BD" title="Ουζμπεκιστάν">Ουζμπεκιστάν</a></li>
+<li><a href="/wiki/%CE%9F%CF%85%CE%BA%CF%81%CE%B1%CE%BD%CE%AF%CE%B1" title="Ουκρανία">Ουκρανία</a></li>
+<li><a href="/wiki/%CE%9F%CF%85%CF%81%CE%BF%CF%85%CE%B3%CE%BF%CF%85%CE%AC%CE%B7" title="Ουρουγουάη">Ουρουγουάη</a></li></ul></div><div class="mw-category-group"><h3>Π</h3>
+<ul><li><a href="/wiki/%CE%A0%CE%B1%CE%BA%CE%B9%CF%83%CF%84%CE%AC%CE%BD" title="Πακιστάν">Πακιστάν</a></li>
+<li><a href="/wiki/%CE%A0%CE%B1%CE%BB%CE%AC%CE%BF%CF%85" title="Παλάου">Παλάου</a></li>
+<li><a href="/wiki/%CE%A0%CE%B1%CE%BD%CE%B1%CE%BC%CE%AC%CF%82" title="Παναμάς">Παναμάς</a></li>
+<li><a href="/wiki/%CE%A0%CE%B1%CF%80%CE%BF%CF%8D%CE%B1_%CE%9D%CE%AD%CE%B1_%CE%93%CE%BF%CF%85%CE%B9%CE%BD%CE%AD%CE%B1" title="Παπούα Νέα Γουινέα">Παπούα Νέα Γουινέα</a></li>
+<li><a href="/wiki/%CE%A0%CE%B1%CF%81%CE%B1%CE%B3%CE%BF%CF%85%CE%AC%CE%B7" title="Παραγουάη">Παραγουάη</a></li>
+<li><a href="/wiki/%CE%A0%CE%B5%CF%81%CE%BF%CF%8D" title="Περού">Περού</a></li>
+<li><a href="/wiki/%CE%A0%CE%B5%CF%81%CF%83%CE%AF%CE%B1" title="Περσία">Περσία</a></li>
+<li><a href="/wiki/%CE%A0%CE%BF%CE%BB%CF%89%CE%BD%CE%AF%CE%B1" title="Πολωνία">Πολωνία</a></li>
+<li><a href="/wiki/%CE%A0%CE%BF%CF%81%CF%84%CE%BF%CE%B3%CE%B1%CE%BB%CE%AF%CE%B1" title="Πορτογαλία">Πορτογαλία</a></li>
+<li><a href="/wiki/%CE%A0%CE%BF%CF%85%CE%AD%CF%81%CF%84%CE%BF_%CE%A1%CE%AF%CE%BA%CE%BF" title="Πουέρτο Ρίκο">Πουέρτο Ρίκο</a></li>
+<li><a href="/wiki/%CE%A0%CF%81%CE%AC%CF%83%CE%B9%CE%BD%CE%BF_%CE%91%CE%BA%CF%81%CF%89%CF%84%CE%AE%CF%81%CE%B9%CE%BF" title="Πράσινο Ακρωτήριο">Πράσινο Ακρωτήριο</a></li></ul></div><div class="mw-category-group"><h3>Ρ</h3>
+<ul><li><a href="/wiki/%CE%A1%CE%BF%CF%85%CE%AC%CE%BD%CF%84%CE%B1" title="Ρουάντα">Ρουάντα</a></li>
+<li><a href="/wiki/%CE%A1%CE%BF%CF%85%CE%BC%CE%B1%CE%BD%CE%AF%CE%B1" title="Ρουμανία">Ρουμανία</a></li>
+<li><a href="/wiki/%CE%A1%CF%89%CF%83%CE%AF%CE%B1" title="Ρωσία">Ρωσία</a></li>
+<li><a href="/wiki/%CE%A1%CF%89%CF%83%CE%B9%CE%BA%CE%AE_%CE%9F%CE%BC%CE%BF%CF%83%CF%80%CE%BF%CE%BD%CE%B4%CE%AF%CE%B1" title="Ρωσική Ομοσπονδία">Ρωσική Ομοσπονδία</a></li></ul></div><div class="mw-category-group"><h3>Σ</h3>
+<ul><li><a href="/wiki/%CE%A3%CE%B1%CE%BC%CF%8C%CE%B1" title="Σαμόα">Σαμόα</a></li>
+<li><a href="/wiki/%CE%A3%CE%B1%CE%BF%CF%85%CE%B4%CE%B9%CE%BA%CE%AE_%CE%91%CF%81%CE%B1%CE%B2%CE%AF%CE%B1" title="Σαουδική Αραβία">Σαουδική Αραβία</a></li>
+<li><a href="/wiki/%CE%A3%CE%B5%CF%81%CE%B2%CE%AF%CE%B1" title="Σερβία">Σερβία</a></li>
+<li><a href="/wiki/%CE%A3%CE%B5%CF%8B%CF%87%CE%AD%CE%BB%CE%BB%CE%B5%CF%82" title="Σεϋχέλλες">Σεϋχέλλες</a></li>
+<li><a href="/wiki/%CE%A3%CE%B9%CE%B3%CE%BA%CE%B1%CF%80%CE%BF%CF%8D%CF%81%CE%B7" title="Σιγκαπούρη">Σιγκαπούρη</a></li>
+<li><a href="/wiki/%CE%A3%CE%B9%CE%AD%CF%81%CE%B1_%CE%9B%CE%B5%CF%8C%CE%BD%CE%B5" title="Σιέρα Λεόνε">Σιέρα Λεόνε</a></li>
+<li><a href="/wiki/%CE%A3%CE%BA%CF%89%CF%84%CE%AF%CE%B1" title="Σκωτία">Σκωτία</a></li>
+<li><a href="/wiki/%CE%A3%CE%BB%CE%BF%CE%B2%CE%B1%CE%BA%CE%AF%CE%B1" title="Σλοβακία">Σλοβακία</a></li>
+<li><a href="/wiki/%CE%A3%CE%BB%CE%BF%CE%B2%CE%B5%CE%BD%CE%AF%CE%B1" title="Σλοβενία">Σλοβενία</a></li>
+<li><a href="/wiki/%CE%A3%CE%BF%CE%BC%CE%B1%CE%BB%CE%AF%CE%B1" title="Σομαλία">Σομαλία</a></li>
+<li><a href="/wiki/%CE%A3%CE%BF%CF%85%CE%B1%CE%B6%CE%B9%CE%BB%CE%AC%CE%BD%CE%B4%CE%B7" title="Σουαζιλάνδη">Σουαζιλάνδη</a></li>
+<li><a href="/wiki/%CE%A3%CE%BF%CF%85%CE%B4%CE%AC%CE%BD" title="Σουδάν">Σουδάν</a></li>
+<li><a href="/wiki/%CE%A3%CE%BF%CF%85%CE%B7%CE%B4%CE%AF%CE%B1" title="Σουηδία">Σουηδία</a></li>
+<li><a href="/wiki/%CE%A3%CE%BF%CF%85%CF%81%CE%B9%CE%BD%CE%AC%CE%BC" title="Σουρινάμ">Σουρινάμ</a></li>
+<li><a href="/wiki/%CE%A3%CF%81%CE%B9_%CE%9B%CE%AC%CE%BD%CE%BA%CE%B1" title="Σρι Λάνκα">Σρι Λάνκα</a></li>
+<li><a href="/wiki/%CE%A3%CF%85%CF%81%CE%AF%CE%B1" title="Συρία">Συρία</a></li></ul></div><div class="mw-category-group"><h3>Τ</h3>
+<ul><li><a href="/wiki/%CE%A4%CE%B1%CF%8A%CE%B2%CE%AC%CE%BD" title="Ταϊβάν">Ταϊβάν</a></li>
+<li><a href="/wiki/%CE%A4%CE%B1%CF%8A%CE%BB%CE%AC%CE%BD%CE%B4%CE%B7" title="Ταϊλάνδη">Ταϊλάνδη</a></li>
+<li><a href="/wiki/%CE%A4%CE%B1%CE%BD%CE%B6%CE%B1%CE%BD%CE%AF%CE%B1" title="Τανζανία">Τανζανία</a></li>
+<li><a href="/wiki/%CE%A4%CE%B1%CF%84%CE%B6%CE%B9%CE%BA%CE%B9%CF%83%CF%84%CE%AC%CE%BD" title="Τατζικιστάν">Τατζικιστάν</a></li>
+<li><a href="/wiki/%CE%A4%CE%B6%CE%B1%CE%BC%CE%AC%CE%B9%CE%BA%CE%B1" title="Τζαμάικα">Τζαμάικα</a></li>
+<li><a href="/wiki/%CE%A4%CF%8C%CE%B3%CE%BA%CE%BF" title="Τόγκο">Τόγκο</a></li>
+<li><a href="/wiki/%CE%A4%CF%8C%CE%BD%CE%B3%CE%BA%CE%B1" title="Τόνγκα">Τόνγκα</a></li>
+<li><a href="/wiki/%CE%A4%CE%BF%CF%85%CE%B2%CE%B1%CE%BB%CE%BF%CF%8D" title="Τουβαλού">Τουβαλού</a></li>
+<li><a href="/wiki/%CE%A4%CE%BF%CF%85%CF%81%CE%BA%CE%AF%CE%B1" title="Τουρκία">Τουρκία</a></li>
+<li><a href="/wiki/%CE%A4%CF%81%CE%B9%CE%BD%CE%B9%CE%BD%CF%84%CE%AC%CE%BD%CF%84_%CE%BA%CE%B1%CE%B9_%CE%A4%CE%BF%CE%BC%CF%80%CE%AC%CE%B3%CE%BA%CE%BF" title="Τρινιντάντ και Τομπάγκο">Τρινιντάντ και Τομπάγκο</a></li>
+<li><a href="/wiki/%CE%A4%CF%83%CE%B5%CF%87%CE%AF%CE%B1" title="Τσεχία">Τσεχία</a></li>
+<li><a href="/wiki/%CE%A4%CF%85%CE%BD%CE%B7%CF%83%CE%AF%CE%B1" title="Τυνησία">Τυνησία</a></li></ul></div><div class="mw-category-group"><h3>Υ</h3>
+<ul><li><a href="/wiki/%CE%A5%CE%B5%CE%BC%CE%AD%CE%BD%CE%B7" title="Υεμένη">Υεμένη</a></li></ul></div><div class="mw-category-group"><h3>Φ</h3>
+<ul><li><a href="/wiki/%CE%A6%CE%B9%CE%BB%CE%B9%CF%80%CF%80%CE%AF%CE%BD%CE%B5%CF%82" title="Φιλιππίνες">Φιλιππίνες</a></li>
+<li><a href="/wiki/%CE%A6%CE%B9%CE%BD%CE%BB%CE%B1%CE%BD%CE%B4%CE%AF%CE%B1" title="Φινλανδία">Φινλανδία</a></li>
+<li><a href="/wiki/%CE%A6%CE%AF%CF%84%CE%B6%CE%B9" title="Φίτζι">Φίτζι</a></li></ul></div><div class="mw-category-group"><h3>Χ</h3>
+<ul><li><a href="/wiki/%CE%A7%CE%B9%CE%BB%CE%AE" title="Χιλή">Χιλή</a></li></ul></div></div></div>`;
+        const regexp = /\"([A-Ω]?[α-ωόάέίώύή]{1,100} ?){1,3}\"/ig;
+        const countries = document.querySelector(".countries");
+        countries.textContent = text.match(regexp).join(",\n");
+    </script>
+</body>
+</html>

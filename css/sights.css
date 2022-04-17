@@ -1,0 +1,112 @@
+.sights {
+    background: #eee;
+    padding: 0.01% 0;
+}
+.sights__heading {
+    font-size: 38px;
+    margin: 351px 0 100px;
+    color: #000;
+    text-align: center;
+}
+.sights-wrap {
+    margin-bottom: 50px;
+}
+.sights-wrap {
+    display: flex;
+    justify-content: space-between;
+    height: 1415px;
+}
+.sights-block {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+}
+.sights-article{
+  background: #fff; 
+  margin-bottom: 5px; 
+}
+.sights-article:hover{
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.3);
+}
+.sights-item {
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.sights-item__img {
+    width: 100%;
+}
+.sights-label {
+    font-family: 'Playfair Display', serif;
+    color:#000; 
+    font-size: 20px;
+    letter-spacing: 0.8px;
+}
+.sights-item__sights-lable{
+    margin-top: 10px;
+}
+.sights-article__link {
+    display: block;
+    padding: 10px 5px;
+    margin-bottom: 10px;
+}
+.sights-text {
+    height: 151px;
+}
+.sights-text__heading {
+    margin: 0;
+    color: rgb(3, 10, 89);
+    font-family: 'Dancing Script', cursive;
+    font-size: 60px;
+    line-height: 151px; 
+    text-align: center;    
+}
+@media screen and (max-width: 1180px){
+    .sights-label{
+        height: 60px;
+    }
+    .sights-wrap{
+        height: auto;
+    }
+    .sights-block{
+        height: auto;
+        justify-content: space-between;
+        width: 32.5%;
+    }
+}
+@media screen and (max-width: 993px){
+    .sights__heading{
+       margin: 295px 0 50px;
+    }
+}
+@media screen and (max-width: 697px){
+    .navbar {
+        margin-top: -45px;
+    }
+    .sights-text__heading{
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 480px){
+    .sights-wrap{
+        flex-direction: column;
+    }
+    .sights-block{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 388px){
+    .navbar {
+        margin-top: -35px;
+    }
+}
+@media screen and (max-width: 375px){
+    .navbar {
+        margin-top: -31px;
+    }
+}
+@media screen and (max-width: 360px){
+    .navbar {
+        margin-top: -53px;
+    }
+}

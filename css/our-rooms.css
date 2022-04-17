@@ -1,0 +1,289 @@
+.our-rooms-banner{
+    margin-top: 30px;
+    height: 840px;
+    background: url(/images/rooms/rooms.jpg) no-repeat center 0 / auto 100%;
+    padding: 0.01% 0;
+}
+.our-rooms-banner__heading{
+    margin: 100px auto;
+    text-align: center;
+    line-height: 840px;
+}
+.general-rooms-information{ 
+    padding: 100px 0;
+    box-sizing: border-box;
+    background: #efeeee; 
+}
+.general-rooms-information__heading{
+    margin: 0 0 50px;
+    text-align: center;
+}
+.general-rooms-information__description{
+    line-height: 30px;
+    margin: 0 0 80px;
+}
+.room-fasilities-item___wrap{
+    display: inline-block;
+    width: 50px;
+    text-align: center;
+}
+.fas{
+    color: #000;
+    font-size: 24px;
+    margin: 0 15px 15px 0;    
+}
+.room-fasilities {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.room-fasilities__item{
+    width: 50%;
+}
+
+.our-rooms {
+    margin: 100px;
+    display: flex;
+}
+.side-our-room-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 5px;
+    padding: 10px;
+    border: 2px solid #999;
+    box-sizing: border-box;   
+}
+.side-our-room-info__heading {
+    transform: rotate(180deg);
+    writing-mode: vertical-rl;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 10px;
+    text-align: center;
+}
+.side-our-room-info__number{
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+}
+.our-room-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 40%;
+}
+.our-room-info__heading{
+    margin-top: 5px;
+    font-size: 28px;
+}
+
+.our-room-info-item__guests, .our-room-info-item__price, .our-room-info-item__deposit, .our-room-info-item__beds{
+    color: #000;
+}
+.our-room-info-item__price_color{
+    color: #ab1d1d;
+    font-size: 25px;
+    font-weight: 600;
+}
+.our-room-info__description{
+    line-height: 25px; 
+}
+.our-room-info__our-room-info-item{
+    line-height: 25px;
+}
+.our-room-info__btn{
+   align-self: start;
+    margin-top: 130px;
+    background-color: #fff;
+    border: 0;
+    border-bottom: 1px solid #000;
+    color: #000;
+    font-weight: 600;
+    padding: 0 2px 12px 2px ;
+    margin-bottom: 5px;    
+} 
+.our-room-info__btn:hover{
+    color:  #ab1d1d;
+    border-bottom: 1px solid #ab1d1d;
+    cursor: pointer;
+}
+.our-room-1{
+    width:45%
+}
+.our-room-1-box{
+    display: flex;
+    justify-content: space-between;
+}
+.our-room-1-wrap  {
+   padding: 5px;
+   box-sizing: border-box;
+}
+.our-room-1-wrap__img{
+    width: 100%;
+}
+.our-room-1-item:hover{
+    cursor: pointer;
+    box-shadow: 0 30px 40px rgba(0, 0, 0, 0.3);   
+}
+.our-rooms_reverse{
+    display: flex;
+    flex-direction: row-reverse;
+}
+@media screen and (max-width: 1536px){
+    .header{
+        position: relative;
+    }
+    .our-rooms-banner{
+        margin-top: -150px;
+    }
+}
+@media screen and (max-width: 993px){
+    .our-rooms-banner{
+       margin: 0;
+       height: 450px;
+    }
+    .our-rooms-banner__heading{
+        line-height: 250px;
+    }
+    .navbar{
+        margin-top: -45px;
+    }
+    .room-fasilities{
+        width: 60%
+    }
+    .our-rooms{
+        margin-bottom: 150px;
+        position: relative;
+    }
+
+    .our-rooms__side-our-room-info{
+        display: none;
+    }
+    .our-room-info{
+        width: 44%;
+    }
+    .our-room-1{
+        width: 55%;
+    }
+    .our-rooms_reverse .our-room-info{
+        margin-left: 30px;
+    }
+    .our-room-info__btn{
+        position: absolute;
+        bottom: -58px;
+        right: 0;
+    }
+    .our-rooms_reverse .our-room-info__btn{
+        left: 0;
+        width: 80px;
+    }
+}
+@media screen and (max-width: 900px){
+    .our-rooms{
+        flex-direction: column;
+        margin-top: 50px;
+        margin-bottom: 95px;
+    }
+    .our-room-info{
+        padding-left: 5px;
+        width: 100%;
+    }
+    .our-room-1{
+        width: 100%;
+    }
+    .our-room-info__btn{
+        position: static;
+        bottom: 0;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .our-rooms_reverse .our-room-info{
+        margin-left: 0;
+    }
+}    
+@media screen and (max-width: 720px){
+    .room-fasilities{
+        width: 70%;
+    }
+    .general-rooms-information {
+        padding: 95px 0;
+    }
+}
+@media screen and (max-width: 697px){
+    .navbar{
+        margin-top: -45px;
+    }
+}
+@media screen and (max-width: 620px){
+    .our-rooms-banner__heading_width{
+        margin: 168px 0 0;
+        height: 70%;
+        padding: 0 10px;
+        line-height:45px;
+    }
+    .our-rooms{
+        margin: 50px 15px;
+    }
+    .room-fasilities{
+        width: 80%;
+    }
+    .our-rooms{
+        margin-bottom: 50px;
+    }
+    .general-rooms-information__description{
+        text-align: justify;
+    }
+}
+@media screen and (max-width: 510px){
+    .general-rooms-information{
+        padding: 50px 0;
+    }
+    .general-rooms-information__description {
+        margin: 0 0 50px;
+    }
+    .room-fasilities{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 450px){
+    .room-fasilities {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+    .room-fasilities__item{
+        width: 100%;
+    }
+    .room-fasilities-item___wrap{
+        text-align: center;
+        padding: 15px 0;
+    }
+    .fas{
+        margin: 0;
+    }
+}
+@media screen and (max-width: 388px){
+    .navbar{
+        margin-top: -35px;
+    }
+}
+@media screen and (max-width: 375px){
+    .navbar{
+        margin-top: -31px;
+    }
+}
+@media screen and (max-width: 360px){
+    .navbar{
+        margin-top: -53px;
+    }
+    .our-rooms-banner__heading_width{
+        font-size: 44px;
+    }
+}
+
+

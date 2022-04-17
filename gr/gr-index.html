@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&family=Prata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/all.min.css">  
+    <link rel="stylesheet" href="/css/normalize.css">  
+    <link rel="stylesheet" href="/css/main.css">  
+    <title>Αρχική - Ενοικιαζόμενα Δωμάτια Νέος Παντελεήμονας</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header container__header">
+            <div class="container__container-fixed">
+                <div class="top-panel header__top-panel">
+                    <div class="contacts top-panel__contacts">
+                        <span class="contacts__label">Επικοινωνήστε μαζί μας
+                            <a class="contacts__phone" href="tel:+306986607051">+306986607051</a>
+                        </span>
+                        <span class="contacts__time">Τοπική ώρα
+                            <ul class="clock" id="clock1">
+				                <li class="hours"></li>
+				                <li class="point">:</li>
+				                <li class="min"></li>
+				                <li class="point">:</li>
+				                <li class="sec"></li>
+			                </ul></span>
+                    </div>
+                    <div class="languages top-panel__languages">
+                        <a href="/index.html" class="languages__item languages__item_border">ENG</a>
+                        <a href="#" class="languages__item  languages__item_active">GR</a>
+                    </div>
+                </div>
+                <nav class="sandwich header__sandwich" id="navbar">
+                    <div class="sandwich__content">
+                        <input type="checkbox" class="sandwich__checkbox" id="menu1">
+                        <div class="sandwich-box sandwich__sandwich-box">
+                            <div class="sandwich-box__line"></div>	
+                        </div>
+                        <label for="menu1" class="sandwich__navbar">
+                            <div class="navbar">
+                                <a href="#" class="navbar__link navbar__link_active">αρχικη</a>
+                                <a href="/gr/gr-about.html" class="navbar__link">σχετικα με εμας</a>
+                                <a href="/gr/gr-our-rooms.html" class="navbar__link">τα δωματια μας</a>
+                                <a href="#" class="logo navbar__logo navbar__link navbar__logo_index">
+                                    <h1 class="logo__title">Erato</h1>
+                                    <h2 class="logo__details">Apartments</h2>
+                                </a>
+                                <a href="/gr/gr-reservation.html" class="navbar__link">κρατηση</a>
+                                <a href="/gr/gr-sights.html" class="navbar__link">αξιοθεατα</a>
+                                <a href="/gr/gr-contact.html" class="navbar__link">Επικοινωνια</a>
+                            </div>
+                        </label>
+                    </div>
+                </nav>
+            </div>
+        </header>     
+    
+        <section class="home-slider container__home-slider" id="slider">    
+            <img class="home-slider__img home-slider__img_new" src="/images/home/slider/slider-1.jpg" alt="Castle View" data-num="1">
+            <img class="home-slider__img home-slider__img_current" src="/images/home/slider/slider-0.jpg" alt="Castle View" data-num="0">
+            <section class="business-block container__business-block">
+                <div class="container__container-fixed">
+                    <div class="business-wrap business-block__business-wrap">
+                        <div class="erdf-info business-block__business-wrap">
+                            <figure class="erdf-wrap erdf-info__img">
+                                <img class="erdf-wrap__img-eur" src="/images/home/erdf-info-eur.jpg" alt="ERDF Information">
+                                <img class="erdf-wrap__img-gr" src="/images/home/erdf-info-gr.jpg" alt="ERDF Information">
+                            </figure>
+                            <div class="more-info erdf-info__more-info">
+                                <a class="more-info__link" target="_blank" href="https://www.espa.gr/en/Pages/staticPartnershipAgreement.aspx">Διαβαστε περισσοτερα</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>         
+        </section>
+        <section class="about container__about">
+            <div class="about-phone about__about-phone">
+                <a href="tel:+302352043333" class="about-phone__link">Φαξ: +302352043333</a>
+            </div>:
+            <div class="container__container-fixed">    
+                <div class="about-info about__about-info">
+                    <h2 class="heading about-info__heading">Λιγα λογια για εμας</h2>
+                    <div class="about-wrap about-info__about-wrap">
+                        <figure class="about-wrap__img-block">
+                            <img src="/images/home/hotel.jpg" alt=" Erato Apartments" class="about-wrap__img">
+                        </figure>
+                        <div class="about-contant about-wrap__about-contant">
+                            <h3 class="about-contant__heading">Ένας Ιδανικός Προορισμός Για Διακοπές</h3>
+                            <p class="about-contant__quote">Το κατάλυμα μας βρίσκεται απέναντι απο το κάστρο του Πλαταμώνα και σας παρέχει τη μοναδική ευκαιρία να απολαύσετε τις ομορφιές του τόπου μας. Απολαύστε χαλαρωτικες διακοπές στα δωμάτια μας, πίνοντας τον καφέ η το ποτό σας. Επισκεφτείτε τα πιο όμορφα  μέρη της Πιερίας: το Λιτόχωρο, το Αρχαίο Δίον, τον παραδοσιακό οικισμό του Παλιού Παντελεήμονα και τον Εθνικο Δρυμό του Ολύμπου.</p> 
+                            <div class="author-info about-contant__author-info">
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-email about__about-email">
+                <a href="mailto:hotelerato@yahoo.com"class="about-email__link">hotelerato@yahoo.com</a>
+            </div>    
+        </section> 
+
+        <section class="rooms container__rooms" id="gallery1">
+            <div class="room-content rooms__room-content">
+                <div class="room-content-wrap room-content__room-content-wrap">
+                    <h2 class="heading room-content-wrap__ditails">ανακαλυψτε τα δωματια μας</h2>
+                    <h3 class="room-content-wrap__heading">Παραδοσιακό Εσωτερικό</h3>
+                    <ul class="room-info room-content-wrap__room-info">
+                    
+                        <li class="room-item room-info__room-item">
+                            <picture class="room-wrap room-item__room-wrap">
+                                <source srcset="/images/home/rooms/room-1-480.jpg 480w" media="(max-width: 480px)">
+                                <img class="room-wrap__img" src="/images/home/rooms/room-1-small.jpg" alt="Standart Single Room">
+                            </picture>
+                            <div class="room-data room-item__room-data">
+                                <h4 class="room-data__heading"><span>Standard</span> Single Room</h4>
+                                <div class="room-price room-data__room-price">Τιμή : 
+                                    <span class="room-price__item"> &#8364 30.00 / Διανυκτέρευση</span>
+                                </div>
+                                <div class="room-data__room-guests">Eπισκέπτες: 1</div>
+                            </div>
+                        </li>
+                        
+                        <li class="room-item room-info__room-item">
+                            <picture class="room-wrap  room-item__room-wrap">
+                                <source srcset="/images/home/rooms/room-2-480.jpg 480w" media="(max-width: 480px)">
+                                <img class="room-wrap__img" src="/images/home/rooms/room-2-small.jpg" alt="Standart Twin Room"> 
+                            </picture>
+                            <div class="room-data room-item__room-data">
+                                <h4 class="room-data__heading"><span>Standard</span> Twin Room</h4>
+                                <div class="room-price room-data__room-price">Τιμή : 
+                                    <span class="room-price__item"> &#8364 40.00 / Διανυκτέρευση</span> 
+                                </div>
+                                <div class="room-data__room-guests">Eπισκέπτες: 1 - 2</div>
+                            </div>
+                        </li>
+
+                        <li class="room-item room-info__room-item">
+                            <picture class="room-wrap room-item__room-wrap">
+                                <source srcset="/images/home/rooms/room-3-480.jpg 480w" media="(max-width: 480px)">
+                                <img class="room-wrap__img" src="/images/home/rooms/room-3-small.jpg" alt="Standart Double Room">
+                            </picture>
+                            <div class="room-data room-item__room-data">
+                                <h4 class="room-data__heading"><span>Standard</span> Double Room</h4>
+                                <div class="room-price room-data__room-price">Τιμή : 
+                                    <span class="room-price__item"> &#8364 40.00 / Διανυκτέρευση</span>
+                                </div>
+                                <div class="room-data__room-guests">Eπισκέπτες: 1 - 2</div>
+                            </div>
+                        </li>
+                    </ul>    
+                </div>
+            </div>
+
+            <figure class="room-wrap room-wrap_big-picture rooms__room-wrap">
+                <img class="room-wrap__img" src="/images/home/rooms/room-1.jpg"  alt="Standart Single Room">
+            </figure>        
+        </section>
+
+        <section class="home-cafe container__home-cafe" id="gallery2">
+            <div class="container__container-fixed">
+                <h2 class="heading home-cafe__ditails">ΚΑΦΕ-ΜΠΑΡ</h2>
+                <h3 class="home-cafe__heading">Ιδανικό για στιγμές χαλάρωσης και ηρεμίας. Καφέ και ποτό, αγναντεύοντας το κάστρο του Πλαταμώνα.</h3>
+                <figure class="room-wrap room-wrap_big-picture  cafe-wrap home-cafe__room-wrap">
+                    <img class="cafe-wrap__img" src="/images/home/cafe/cafe-1.jpg" alt="cafe">
+                </figure> 
+                <ul class="cafe-info home-cafe__cafe-info">
+                    <li class="cafe-item cafe-info__cafe-item">
+                       <figure class="room-wrap cafe-wrap cafe-item__room-wrap">
+                            <img class="cafe-wrap__img"src="/images/home/cafe/cafe-1-small.jpg" alt="cafe">
+                        </figure> 
+                    </li>
+                    <li class="cafe-item cafe-info__cafe-item">
+                       <figure class="room-wrap cafe-wrap cafe-item__room-wrap">
+                            <img class="cafe-wrap__img"src="/images/home/cafe/cafe-2-small.jpg" alt="cafe">
+                        </figure> 
+                    </li>
+                    <li class="cafe-item cafe-info__cafe-item">
+                       <figure class="room-wrap  cafe-wrap cafe-item__room-wrap">
+                            <img class="cafe-wrap__img"src="/images/home/cafe/cafe-3-small.jpg" alt="cafe">
+                        </figure> 
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="home-contacts container__home-contacts">
+            <div class="home-contacts-wrap home-contacts__home-contacts-wrap">
+                <figure class="contacts-wrap home-contacts-wrap__contacts-wrap">
+                    <img class="contacts-wrap__img" src="/images/home/map.png" alt="Map">
+                </figure> 
+            </div>
+
+            <div class="home-contact-info home-contacts__contact-info">
+                <h2 class="heading home-contact-info__ditails">Πληροφοριες</h2>
+                <h3 class="home-contact-info__heading">Επικοινωνία</h3>
+                <h4 class="city home-contact-info__city">Νέος Παντελεήμονας 
+                    <span class="city__country">Ελλάδα</span>
+                </h4>
+                <a href="https://goo.gl/maps/Laef95uhVVjvQ7gV8" target="_blank" class="home-contact-info__address">Αθανασίου Διάκου, 1<br>Νέος Παντελεήμονας, Πιερία<br>Ελλάδα τ.κ 60065</a>
+                <a href="mailto:hotelerato@yahoo.com" class="email home-contact-info__email">
+                    <span class="email__link">Email:</span>
+                hotelerato@yahoo.com</a>
+                <div class="home-contact-info__lable">Επικοινωνήστε μαζί μας :</div>
+                <a href="tel:+302352043333" class="phone home-contact-info__phone">
+                    <span class="phone__link">+302352043333</span>
+                </a>
+            </div>
+        </section>
+        
+        <footer class="footer container__footer">
+            <div class="container__container-fixed">
+                <div class="footer-top-panel footer__footer-top-panel">
+                    <h3 class="footer-top-panel__logo">ERATO</h3>   
+                    <nav class="footer-socials footer-top-panel__footer-socials">
+                        <a class="footer-socials__link footer-socials__link-icon" target="_blank" href="https://www.booking.com/hotel/gr/erato-old-panteleimonas.ru.html?label=gen173nr-1DCAsoXEIXZXJhdG8tb2xkLXBhbnRlbGVpbW9uYXNIIVgEaFyIAQGYASG4ARjIAQzYAQPoAQH4AQOIAgGoAgS4Asa8y4cGwAIB0gIkMDc4NzM0NWYtNWRmYS00Njg5LTliNjgtN2FlYzBjMzg1N2Mw2AIE4AIB;sid=7810ad12813e76d0de658607a3beed0d;dist=0;group_adults=2;keep_landing=1;sb_price_type=total;type=total;sig=v1i9UFl4xo"></a>
+                        <a class="footer-socials__link" target="_blank" href="https://www.airbnb.co.in/rooms/158988?check_in=2021-06-02&check_out=2021-06-05&federated_search_id=3a6834ca-3d59-46f1-ab87-ea9c08495d91&source_impression_id=p3_1621166321_2MGkGXPJVgXQXsSG&guests=1&adults=1"><i class="fab fa-airbnb"></i></a>
+                        <a class="footer-socials__link" target="_blank" href="https://www.facebook.com/Erato-Castle-of-Platamon-147464198650663/"><i class="fab fa-facebook-f"></i></a>
+                    </nav>
+                </div>
+                <div class="copyright footer__copyright">
+                    <p class="copyright__content">All Rights Reserved © 2021</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+<script src="/scripts/jquery-3.5.1.min.js"></script>  
+<script src="/scripts/functions.js"></script>
+<script src="/scripts/time.js"></script>
+<script src="/scripts/slider.js"></script>
+<script src="/scripts/gallery.js"></script>
+<script src="/scripts/gallery-init.js"></script>
+<script src="/scripts/main.js"></script>
+<script>
+    const slider = new Slider("#slider");
+</script>
+</body>
+</html>

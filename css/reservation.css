@@ -1,0 +1,153 @@
+.reservation { 
+    margin-top: 200px; 
+    background: url(../images/home/home-texture-bg.png) repeat 0 0 /  auto;
+    padding: 0.01% 0;
+}
+.reservation__heading {
+    margin: 150px 0 110px 0;
+    text-align: center;
+}
+.reservation-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: #fff;
+    padding: 50px 20px;
+    box-sizing: border-box;
+    margin-bottom: 150px;
+    box-shadow: 6px 6px 20px 0px #0000001A;
+}
+.form__textfield_datepicker{
+    width: 15%;
+}
+.reservation-form__selected-room {
+    padding: 0;    
+}
+.selected-room__item {
+    margin: 0;  
+}
+.form__textfield:focus, .form__selected-room:focus { 
+    outline: 0;
+    box-shadow: 0 0 3px rgba(0,0,0,0.5);
+}
+.reservation-box {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    color: #4d4d4d;
+}
+.reservation-box__checkbox {
+    position: relative;
+    z-index: 1;
+    opacity: 0;
+}
+.reservation-box__checkbox-icon{
+   background: url(/images/icons/checkbox-circle.png) no-repeat 100%; 
+   background-position-x: 0px;
+   display: inline-block;
+   height: 15px; 
+   width: 15px;
+   position: absolute;  
+   margin-left: -25px;
+   margin-top: 1px;
+}
+
+.reservation-box__checkbox:checked  + .reservation-box__checkbox-icon{
+    width: 15px; 
+    background-position-x: -15px;
+}
+.reservation-box_bottom {
+    margin-left: -35px;   
+}
+
+.form__message{
+    width: 100%;
+    margin-top: 50px;
+    color: #6b8210; 
+}
+.form__message_error{
+    color:  #ab1d1d;
+}
+.reservation-form__btn{
+    margin: 50px auto;
+    background-color: #fff;
+    border: 0;
+    border-bottom: 1px solid #000;
+    color: #000;
+    font-weight: 600;
+    padding: 0 2px 12px 2px;
+    box-sizing: border-box;
+} 
+.reservation-form__btn:hover{
+    color:  #ab1d1d;
+    border-bottom: 1px solid #ab1d1d;
+    cursor: pointer;
+}
+.reservation__info-license{
+    text-align:right;
+}
+@media screen and (max-width: 1536px){
+    .reservation{
+        margin-top: 0px;
+    }
+}
+@media screen and (max-width: 993px){
+    .reservation{
+        margin-top: 0;
+    }
+    .reservation__heading{
+       margin: 295px 0 50px;
+    }
+}
+@media screen and (max-width: 772px){
+    .reservation-form{
+        margin-bottom: 95px;
+    }
+    .form__textfield{
+        width: 45%;
+        margin: 10px auto;
+    }
+    .form__textfield_textarea{
+        width: 95%;
+    }
+}
+@media screen and (max-width: 680px){
+    .form__textfield{
+        width: 75%;
+    }
+    .reservation-box_bottom {
+        margin-left: 0;
+    }
+    .reservation-box{
+        text-align: start;
+        margin-left: 85px;
+    }   
+}
+
+@media screen and (max-width: 480px){
+    .form__textfield{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 440px){
+    .reservation-box{
+        text-align: start;
+        margin-left: 35px;
+    } 
+}
+@media screen and (max-width: 360px){
+    .form__textfield{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 360px){
+    .reservation-form{
+        margin-bottom: 50px;
+    }
+    .reservation-form{
+        padding: 50px 10px;
+    }
+    .reservation-box{
+        margin-left: 10px;
+    }
+}

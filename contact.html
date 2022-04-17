@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/png"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&family=Prata&display=swap" rel="stylesheet">  <!-- Google fonts  -->
+    <link rel="stylesheet" href="/css/all.min.css">  
+    <link rel="stylesheet" href="/css/normalize.css">  
+    <link rel="stylesheet" href="/css/main.css">  
+    <link rel="stylesheet" href="/css/contact.css">  
+    <title>Contact Us - Erato Apartments in Neos Panteleimonas</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header container__header">
+            <div class="container__container-fixed">
+                <div class="top-panel header__top-panel">
+                    <div class="contacts top-panel__contacts">
+                        <span class="contacts__label">Contact us directly at
+                            <a class="contacts__phone" href="tel:+306986607051">+306986607051</a>
+                        </span>
+                        <span class="contacts__time">local time
+                            <ul class="clock" id="clock1">
+				                <li class="hours"></li>
+				                <li class="point">:</li>
+				                <li class="min"></li>
+				                <li class="point">:</li>
+				                <li class="sec"></li>
+			                </ul></span>
+                    </div>
+                    <div class="languages top-panel__languages">
+                        <a href="#" class="languages__item languages__item_active languages__item_border">ENG</a>
+                        <a href="/gr/gr-contact.html" class="languages__item">GR</a>
+                    </div>
+                </div>
+                <nav class="sandwich header__sandwich" id="navbar">
+                    <div class="sandwich__content">
+                        <input type="checkbox" class="sandwich__checkbox" id="menu1">
+                        <div class="sandwich-box sandwich__sandwich-box">
+                            <div class="sandwich-box__line"></div>	
+                        </div>
+                        <label for="menu1" class="sandwich__navbar">
+                            <div class="navbar">
+                                <a href="/index.html" class="navbar__link">home</a>
+                                <a href="/about.html" class="navbar__link">about us</a>
+                                <a href="/our-rooms.html" class="navbar__link">our rooms</a>
+                                <a href="/index.html" class="logo navbar__logo navbar__link">
+                                    <h1 class="logo__title">Erato</h1>
+                                    <h2 class="logo__details">Apartments</h2>
+                                </a>
+                                <a href="/reservation.html" class="navbar__link">reservation</a>
+                                <a href="/sights.html" class="navbar__link">sights</a>
+                                <a href="#" class="navbar__link navbar__link_active">contact</a>
+                            </div>
+                        </label>
+                    </div>
+                </nav>
+            </div>
+        </header>    
+
+        <section class="contacts-banner container__contacts-banner">    
+            <h1 class="contacts-banner__heading">Contact Us</h1>
+        </section>
+
+        <section class="contact-ditails container__contact-ditails">
+            <div class="container__container-fixed">
+                <h3 class="contact-ditails__heading">Contact Details</h3>
+                <p class="contact-ditails__description">If you need any help, please contact us,send us an email or go to our forum.<br>We are sure that you can receive our reply as soon as possible.</p>
+                <ul class="contact-info contacs-ditails__info">
+                    <li class="contact-phone contact-info__item">
+                        <div class="contact-phone__icon"><i class="fas fa-mobile-alt"></i></div>
+                        <h4 class="contact-phone__heading">Phone</h4>
+                        <a class="contact-phone__number" href="tel:+306986607051">Mobile:
+                            <span class="contact-phone__item"> +306986607051</span>
+                        </a><br>
+                        <a class="contact-phone__number" href="tel:+302352043333">Fax:
+                            <span class="contact-phone__item"> +302352043333</span>
+                        </a>
+                    </li>
+                    <li class="contact-address contact-info__item">
+                        <div class="contact-address__icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <h4 class="contact-address__heading">Address</h4>
+                        <a href="https://goo.gl/maps/Laef95uhVVjvQ7gV8" target="_blank" class="contact-address__address">Athanasiou Diakou, 1<br>Neos Panteleimonas<br>Dion Olympos<br>Pieria<br>Central Macedonia<br>Greece, 60065.</a>
+                    </li>
+                    <li class="contact-email contact-info__item">
+                        <div class="contact-email__icon"><i class="fas fa-envelope-open-text"></i></div>
+                        <h4 class="contact-email__heading">Email</h4>
+                        <a class="contact-email__email" href="mailto:hotelerato@yahoo.com">hotelerato@yahoo.com</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="form-container conrainer__form-container">
+            <div class="container__container-fixed">
+                <h3 class="form-container__heading">Get in Touch with Us</h3>
+                <div class="form-container__description">If you have any question, please don’t hesitate to send us a message</div>
+                <form class="form form-container__form" id="feedback">
+                    <div class="form__info-message">The textfields marked with * are required to fill</div>
+                    <input type="text" name="name" class="form__textfield" placeholder="Name *">
+                    <input type="email" name="email" class="form__textfield" placeholder="youremail@domain.com *">
+                    <input type="text" name="subject" class="form__textfield" placeholder="Subject">
+                    <textarea name="notes" class="form__textfield form__textfield_textarea" placeholder="Here goes your message"></textarea>
+                    <input type="hidden" name="action" value="feedback" class="form__textfield form__textfield_action">
+                    <input type="hidden" name="lang" value="en" class="form__textfield form__textfield_lang">
+                    <div class="form__message"></div>
+                    <button class="form__btn">SEND MESSAGE</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="map container__map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52363.6412950837!2d22.554735529421347!3d39.98404312290329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13580af34d72f71d%3A0xc68e8f36d76f874e!2sHotel%20Erato!5e0!3m2!1sru!2sua!4v1626641120433!5m2!1sru!2sua" allowfullscreen="" loading="lazy" class="map__data"></iframe>
+        </section>
+
+        <footer class="footer container__footer">
+            <div class="container__container-fixed">
+                <div class="footer-top-panel footer__footer-top-panel">
+                    <h3 class="footer-top-panel__logo">ERATO</h3>   
+                    <nav class="footer-socials footer-top-panel__footer-socials">
+                        <a class="footer-socials__link footer-socials__link-icon" target="_blank" href="https://www.booking.com/hotel/gr/erato-old-panteleimonas.ru.html?label=gen173nr-1DCAsoXEIXZXJhdG8tb2xkLXBhbnRlbGVpbW9uYXNIIVgEaFyIAQGYASG4ARjIAQzYAQPoAQH4AQOIAgGoAgS4Asa8y4cGwAIB0gIkMDc4NzM0NWYtNWRmYS00Njg5LTliNjgtN2FlYzBjMzg1N2Mw2AIE4AIB;sid=7810ad12813e76d0de658607a3beed0d;dist=0;group_adults=2;keep_landing=1;sb_price_type=total;type=total;sig=v1i9UFl4xo"></a>
+                        <a class="footer-socials__link" target="_blank" href="https://www.airbnb.co.in/rooms/158988?check_in=2021-06-02&check_out=2021-06-05&federated_search_id=3a6834ca-3d59-46f1-ab87-ea9c08495d91&source_impression_id=p3_1621166321_2MGkGXPJVgXQXsSG&guests=1&adults=1"><i class="fab fa-airbnb"></i></a>
+                        <a class="footer-socials__link" target="_blank" href="https://www.facebook.com/Erato-Castle-of-Platamon-147464198650663/"><i class="fab fa-facebook-f"></i></a>
+                    </nav>
+                </div>
+                <div class="copyright footer__copyright">
+                    <p class="copyright__content">All Rights Reserved © 2021</p>
+                </div>
+            </div>
+        </footer>    
+    </div>
+    <script src="/scripts/jquery-3.5.1.min.js"></script>  
+    <script src="/scripts/functions.js"></script>
+    <script src="/scripts/time.js"></script>
+    <script src="/scripts/form.js"></script>
+    <script src="/scripts/feedback.js"></script>
+    <script src="/scripts/main.js"></script>
+    <script>
+        const reservationApp = new Feedback("#feedback");
+    </script>
+</body>
+</html>
